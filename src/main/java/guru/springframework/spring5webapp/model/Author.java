@@ -13,6 +13,14 @@ import java.util.Set;
 @ToString
 public class Author {
 
+    public Author(){
+
+    }
+    public Author(String firstName,String lastName){
+     this.firstName=firstName;
+     this.lastName=lastName;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @EqualsAndHashCode.Include private long id;
